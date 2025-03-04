@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            border-radius: 5px, 5px, 0px, 0px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+
+        table, th, td {
+            border: 0.1px solid black;
+        }
+
+        th, td {
+            background-color: rgb(240, 238, 237);
+            padding: 15px;
+            text-align: left;
+        }
+
+        table td:nth-of-type(odd) {
+            background-color: rgb(224, 224, 224);
+        }
+
+        .active-row {
+            font-weight: bold;
+            color: rgb(255, 0, 217);
+        }
+
+        th {
+            background-color: rgb(244, 116, 212);
+        }
+    </style>
+    <table class="table" border="1">
+        <tr align="Left">
+            <th>Serial No.</th>
+            <th>Certifications</th>
+            <th>Platform</th>
+            <th>Year</th>
+            <th>Completed</th>
+        </tr>
+        <tr>
+            <td align="Left">1</td>
+            <td align="Left">Certified Course in Digital
+                Marketing</td>
+            <td align="Left">Google</td>
+            <td align="Left">2022</td>
+            <td align="Left">Yes</td>
+        </tr>
+        <tr>
+            <td align="Left">2</td>
+            <td align="Left">Certified Bootcamp in Graphic
+                Designing And UI/UX</td>
+            <td align="Left">Let's Upgrade</td>
+            <td align="Left">2024</td>
+            <td align="Left">Yes</td>
+        </tr>
+        <tr>
+            <td align="Left">3</td>
+            <td align="Left">Certified Course in UI/UX</td>
+            <td align="Left">Great Learning</td>
+            <td align="Left">2024</td>
+            <td align="Left">Yes</td>
+        </tr>
+        <tr class="active-row">
+            <td align="Left">4</td>
+            <td align="Left">Certified Course in People-Centered Designing</td>
+            <td align="Left">The Open University</td>
+            <td align="Left">2025</td>
+            <td align="Left">Yes</td>
+        </tr>
+    </table>

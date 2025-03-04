@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="Resume.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #c577ac;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ecd1e6;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .form h1 {
+            text-align: center;
+            color: #c577ac;
+        }
+
+        .form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        .form input[type="text"],
+        .form input[type="email"],
+        .form input[type="password"],
+        .form input[type="number"],
+        .form input[type="tel"],
+        .form input[type="date"],
+        .form select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+        }
+
+        .form input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .form input[type="submit"],
+        .form input[type="reset"] {
+            background-color: #c577ac;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .form input[type="submit"]:hover,
+        .form input[type="reset"]:hover {
+            background-color: #b7368e;
+        }
+
+        .form .checkbox-label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Resume And Portfolio</h1>
+        <p>My Personal Website</p>
+        <nav>
+            <a href="/resume.html">Home</a> |
+            <a href="/work.html">Work</a> |
+            <a href="/form.html">Contact Me</a>
+        </nav>
+    </header>
+
+    <form class="form" action="form.php" method="post">
+        <h1>Contact Me</h1> 
+
+        <label>Title:</label>
+        <label class="checkbox-label">Mr.</label>
+        <input type="radio" name="title" value="Mr." required>
+        <label class="checkbox-label">Mrs.</label>
+        <input type="radio" name="title" value="Mrs.">
+        <label class="checkbox-label">PhD.</label>
+        <input type="radio" name="title" value="PhD.">
+
+        <label>First Name:</label>
+        <input type="text" name="first_name" placeholder="Rishika" required>
+
+        <label>Last Name:</label>
+        <input type="text" name="last_name" placeholder="Jain" required>
+
+        <label>E-mail:</label>
+        <input type="email" name="email" placeholder="jrishika9@gmail.com" required>
+
+        <label>Password:</label>
+        <input type="password" name="password" maxlength="8" required>
+
+        <label>Phone Number:</label>
+        <input type="tel" name="phone" maxlength="10" placeholder="9876543210" required>
+
+        <label>Birthdate:</label>
+        <input type="date" name="birthdate" required>
+
+        <label>Age:</label>
+        <input type="number" name="age" min="0" max="99" value="1" required>
+
+        <label for="marital-status">Marital Status:</label>
+        <select name="marital_status" id="marital-status" required>
+            <option value="">Select...</option>
+            <option value="Single">Single</option>
+            <option value="Married">Married</option>
+            <option value="In a relationship">In a relationship</option>
+        </select>
+
+        <label class="checkbox-label">Subscribe:</label>
+        <input type="checkbox" name="subscribe">
+        <br>
+         <br>
+    <div><input type="submit" value="Submit">
+    <input type="reset" value="Reset"></div>
+    </form>
+</body>
+<footer>
+    <p>&copy; 2025 Rishika Jain. All rights reserved.</p>
+</footer>
+
+</html>

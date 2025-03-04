@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work</title>
+    <link rel="stylesheet" href="Resume.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #c577ac;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-grid img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #c577ac;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Resume And Portfolio</h1>
+        <p>My Personal Website</p>
+        <nav>
+            <a href="/resume.html">Home</a> |
+            <a href="/work.html">Work</a> |
+            <a href="/form.html">Contact Me</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>My Designs</h2>
+        <div class="image-grid">
+            <img src="img1portfolio.jpg" alt="Design 1">
+            <img src="img2portfolio.jpg" alt="Design 2">
+            <img src="img3portfolio.jpg" alt="Design 3">
+            <img src="img4portfolio.jpg" alt="Design 4">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Rishika Jain. All rights reserved.</p>
+    </footer>
+</body>
+</html>
